@@ -13,8 +13,8 @@ public class Employee {
     @Column(name = "employee_name", length = 255)
     private String name;
 
-    @Column(name = "employee_phoneno")
-    private int phone; // Changed type to int
+    @Column(name = "employee_phoneno", length = 255)
+    private String phone;
 
     @Column(name = "employee_email", length = 255)
     private String email;
@@ -27,7 +27,7 @@ public class Employee {
     }
 
     // Parameterized constructor
-    public Employee(Long id, String name, int phone, String email, String message) { // Changed type of phone parameter
+    public Employee(Long id, String name, String phone, String email, String message) { // Changed type of phone parameter
         this.id = id;
         this.name = name;
         this.phone = phone;
@@ -52,11 +52,11 @@ public class Employee {
         this.name = name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

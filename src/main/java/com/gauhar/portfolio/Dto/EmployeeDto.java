@@ -7,12 +7,12 @@ public class EmployeeDto {
 
     private String name;
 
-    private int phone;
+    private String phone;
 
     private String email;
     private String message;
 
-    public EmployeeDto(Long id, String name, int phone, String email, String message) {
+    public EmployeeDto(Long id, String name, String phone, String email, String message) {
         this.id = id;
         this.name = name;
         this.phone = phone;
@@ -39,11 +39,11 @@ public class EmployeeDto {
         this.name = name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

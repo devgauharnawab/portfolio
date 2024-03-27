@@ -17,8 +17,8 @@ public class EmployeeController {
     private EmployeeService employeeService;
     @RequestMapping(path = "/save")
     public String saveEmployee(@RequestBody EmployeeDto employeeDto){
-
         String id = employeeService.addEmployee(employeeDto);
+        System.out.println("Inserted!!!");
         return id;
     }
 }
